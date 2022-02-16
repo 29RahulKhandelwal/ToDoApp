@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Header />
-      <CreateArea />
+      <CreateArea onAdd={addNote} />
       <Note key={1} title="Note title" content="Note content" />
       <Footer />
     </div>
