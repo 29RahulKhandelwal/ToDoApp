@@ -11,7 +11,8 @@ function App() {
       return [...prevNotes, newNote];
     });
   }
-  
+  function deleteNote(id) {
+    
   }
   return (
     <div>
@@ -24,7 +25,7 @@ function App() {
             id={index}
             title={noteItem.title}
             content={noteItem.content}
-            
+            onDelete={deleteNote}
           />
         );
       })}
